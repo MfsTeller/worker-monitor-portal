@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<!-- Worker-Monitor Portal-->
+<html lang="ja">
+  <head>
+    <!-- Encoding-->
+    <meta charset="utf-8">
+    <!-- IE-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Responsice web design-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Load css -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="./worker-monitor.css" rel="stylesheet">
+    <!-- Load jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Load bootstrap js -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Title -->
+    <title>Worker-Monitor Portal</title>
+  </head>
+  <!-- Body -->
+  <body>
+    <!-- Navigation bar -->
+    <nav class="navbar navbar-dark bg-dark">
+      <a class="navbar-brand mb-0 h1" href="https://github.com/MfsTeller/worker-monitor-portal">
+        Worker-Monitor Portal
+      </a>
+      <!-- Toggler button-->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- Toggler content-->
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-item nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          <a class="nav-item nav-link" href="https://github.com/MfsTeller/worker-monitor-client">Worker-Monitor Client</a>
+          <a class="nav-item nav-link" href="https://github.com/MfsTeller/worker-monitor-server">Worker-Monitor Server</a>
+          <a class="nav-item nav-link disabled" href="#">Worker-Monitor Infrastructure</a>
+        </div>
+      </div>
+    </nav>
+    <!-- Jumbotron-->
+    <div class="jumbotron mb-0 bg-gray jumbotron-fluid">
+      <div class="container">
+        <h1 class="display-4">Welcome to Worker-Monitor Portal!</h1>
+        <p class="lead">This is a simple worker-monitoring tool.</p>
+      </div>
+    </div>
+    <!-- News -->
+    <div class="container-fluid bg-white pb-4">
+      <h1 class="text-center pt-4 pb-4">
+        News
+      </h1>
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th scope="col">Date</th>
+            <th scope="col">Content</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">2020-05-09</th>
+            <td>Portalのプロトタイプを作成しました。</td>
+          </tr>
+          <tr>
+            <th scope="row">2020-05-06</th>
+            <td>Worker-Monitor Client/Serverのプロトタイプを作成しました。</td>
+          </tr>
+          <tr>
+            <th scope="row">2020-05-04</th>
+            <td>Worker-Monitorプロジェクトの走行を開始しました。</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <!-- Softwares -->
+    <div class="container-fluid bg-lightgray pb-4 mb-4">
+      <h1 class="text-center pt-4 pb-4">
+        Softwares
+      </h1>
+      <div class="card-deck">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Client</h5>
+            <p class="card-text">
+              本ソフトウェアはWindows10 PCの起動・停止時刻を定期取得します。
+              取得したデータはサーバーに送信・登録することができ、
+              登録したデータはWorker-Monitor Portalにて閲覧することができます。
+            </p>
+            <a href="https://github.com/MfsTeller/worker-monitor-client" class="btn btn-dark">
+              Go to GitHub
+            </a>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Server</h5>
+            <p class="card-text">
+              本ソフトウェアはWorker-Monitor Clientから送信されたデータを管理します。
+            </p>
+            <a href="https://github.com/MfsTeller/worker-monitor-server" class="btn btn-dark">Go to GitHub</a>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Infrastructure</h5>
+            <p class="card-text">
+              本ソフトウェアはWorker-Monitor Serverのインフラストラクチャを自動構築します。
+            </p>
+            <a href="https://github.com/MfsTeller/worker-monitor-infrastructure" class="btn btn-dark">Go to GitHub</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Future work -->
+    <div class="container-fluid bg-white pb-4">
+      <h1 class="text-center pt-4 pb-4">
+        Future Work
+      </h1>
+      <div class="card-deck">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Dashboard</h5>
+            <p class="card-text">
+              サーバーにて管理されているデータをWebブラウザ上から閲覧します。
+            </p>
+            <a href="https://github.com/MfsTeller/worker-monitor-portal" class="btn btn-dark">
+              Go to GitHub
+            </a>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">RBAC</h5>
+            <p class="card-text">
+              ユーザーをロール制御することで実行可能な処理を制限します。
+            </p>
+            <a href="https://github.com/MfsTeller/worker-monitor-client" class="btn btn-dark">Go to GitHub</a>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Multi-Platform</h5>
+            <p class="card-text">
+              Windows10に加え、LinuxOSに対応します。
+            </p>
+            <a href="https://github.com/MfsTeller/worker-monitor-client" class="btn btn-dark">Go to GitHub</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Fotter-->
+    <div class="card-footer bg-light text-muted">
+      (c) MfsTeller 2020
+    </div>
+  </body>
+</html>
